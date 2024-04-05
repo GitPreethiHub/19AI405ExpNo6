@@ -1,6 +1,6 @@
 <h1>ExpNo 5 : Implement Minimax Search Algorithm for a Simple TIC-TAC-TOE game</h1> 
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Name: Preethi </h3>
+<h3>Register Number: 212222100037</h3>
 <H3>Aim:</H3>
 <p>
     Implement Minimax Search Algorithm for a Simple TIC-TAC-TOE game
@@ -58,10 +58,10 @@ Let's walk through the algorithm's execution with the full move tree, and show w
 <li>Because it is O's turn in both state 3 and 4, O will seek to find the minimum score, and given the choice between -10 and +10, both states 3 and 4 will yield -10.</li>
 <li>>Finally the score list for states 2, 3, and 4 are populated with +10, -10 and -10 respectively, and state 1 seeking to maximize the score will chose the winning move with score +10, state 2.</li
 </ul>
-##A Coded Version of Minimax Hopefully by now you have a rough sense of how th e minimax algorithm determines the best move to play. Let's examine my implementation of the algorithm to solidify the understanding:
+<h2>A Coded Version of Minimax :</h2>
 
 Here is the function for scoring the game:
-
+```
 # @player is the turn taking player
 def score(game)
     if game.win?(@player)
@@ -101,7 +101,7 @@ def minimax(game)
         return scores[min_score_index]
     end
 end
-
+```
 <hr>
 <h2>Sample Input and Output</h2>
 
